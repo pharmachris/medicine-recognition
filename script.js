@@ -15,7 +15,7 @@ document.getElementById("uploadButton").addEventListener("click", async () => {
 
     try {
         // 呼叫 Hugging Face Spaces 或其他 API 進行藥品辨識
-        const response = await fetch("https://your-api-endpoint.com/predict", {
+        const response = await fetch("https://huggingface.co/spaces/pharmachris/medicine-recognition", {
             method: "POST",
             body: formData,
         });
